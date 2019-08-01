@@ -1,0 +1,19 @@
+server:
+  port: 1256
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+  instance:
+    prefer-ip-address: true #以ip注册到注册中心
+
+spring:
+  application:
+    name: SPRING-CLOUD-CONFIG-SERVER #服务名
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Richard-Jordan/aigou-zuul.git
+          username: Richard-Jordan
+          password: ll296864820..
